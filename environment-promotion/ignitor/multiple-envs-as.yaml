@@ -12,7 +12,7 @@ spec:
       - path: environment-promotion/envs/*
   template:
     metadata:
-      name: 'env-{{path.basename}}'
+      name: '{{path.basename}}'
     spec:
       project: "default"
       source:
