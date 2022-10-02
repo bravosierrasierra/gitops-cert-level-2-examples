@@ -15,7 +15,7 @@ spec:
   source:
     repoURL: https://github.com/bravosierrasierra/gitops-cert-level-2-examples.git
     targetRevision: HEAD
-    path: environment-promotion/multiple-envs-as.yaml
+    path: environment-promotion/ignitor
 
     # directory
     directory:
