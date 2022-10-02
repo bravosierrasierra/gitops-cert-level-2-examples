@@ -5,7 +5,10 @@ metadata:
   generateName: cleanup-after-sync-
   labels:
     codefresh.io/cert: cleanup-job
-  #annotations:
+    annotations:
+      argocd.argoproj.io/sync-options: Replace=true
+      argocd.argoproj.io/compare-options: IgnoreExtraneous
+    #annotations:
       #argocd.argoproj.io/hook: PostSync
 spec:
   template:
@@ -17,4 +20,4 @@ spec:
           - "sleep"
           - "10"
       restartPolicy: Never
-  backoffLimit: 2    
+  backoffLimit: 2
