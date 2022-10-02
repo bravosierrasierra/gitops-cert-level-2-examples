@@ -8,8 +8,8 @@ metadata:
     # annotations:
     #   argocd.argoproj.io/sync-options: Replace=true
     #   argocd.argoproj.io/compare-options: IgnoreExtraneous
-    annotations:
-      argocd.argoproj.io/hook: PostSync
+  annotations:
+    argocd.argoproj.io/hook: PostSync
 spec:
   template:
     spec:
